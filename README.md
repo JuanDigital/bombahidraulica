@@ -1,27 +1,14 @@
-<h2>crear entorno virtual:</h2>
+<h2>Control de bomba en la web por MQTT</h2>
+<h3>crear entorno virtual:</h3>
 
-ssh```	python3 -m venv pump-env ```
-<h2>instalar flask:</h2>
+```	python3 -m venv pump-env ```
+<h3>instalar flask:</h3>
 
-ssh```	pip installa flask ```	
+```	pip installa flask ```	
+<h3> instalar cliente mqtt </h3>
 
-<h2>__init.py__</h2>
+``pip install paho-mqtt ``
 
-ssh```	todo lo que se importe en init se crea como paquete ```	
-
-<h2>manage.py</h2>
-
-ssh```	archivo de configuraciones y arranque de app ```	
-
-<h2>flask-script</h2>
-
-ssh```	pip install flask-script```	
-
-patron de arquitectura singleto
-
-<h2>iniciar servidor</h2>
-
-ssh```	python manage.py runserver```	
 
 
 
