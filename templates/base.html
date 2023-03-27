@@ -6,15 +6,23 @@
 	<title>{{data.titulo}}</title>
 	<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 </head>
-<body>
-	<a href="{{url_for('index')}}">Index</a>
-	<a href="{{url_for('contacto')}}">contacto</a>	
-	<h1>{{data.encabezado}}</h1>
+
+	<div>
+	<h2>{{data.encabezado}}</h2>
+	</div>
+	<div>
+	<form action='/datos' method='GET'>
+ 	<input type='Submit' value="encender" name='accion'/>	
+	</form>
+	<br>
+	<form action='/datos' method='GET'>
+ 	<input type='Submit' value="apagar" name='accion'/>	
+	</form>
+	</div>
+	<div>
 	{%block contenido%}
 	
 	{%endblock%}
-	<p>
-		Aqui se vera un boton
-	</p>
-</body>
+	
+</div>
 </html>
