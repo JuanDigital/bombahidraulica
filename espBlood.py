@@ -9,7 +9,7 @@ import binascii
 wlan = network.WLAN(network.STA_IF)
 if not wlan.isconnected():
     wlan.active(True)
-    wlan.connect('PlantaAlta', 'xya8G39ecK')
+    wlan.connect('SSID', 'CONTRASEÑA')
     while not wlan.isconnected():
         pass
 
@@ -20,7 +20,7 @@ def interaction(topic, msg):
     if msg==b'encender':        
         led.value(1)
         trig.value(0)
-    elif msg== b'apagar'      
+    elif msg== b'apagar':      
         led.value(0)
         trig.value(1)
 
